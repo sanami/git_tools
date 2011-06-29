@@ -19,7 +19,7 @@ private
 
       Dir.chdir dir do
         if File.exists? '.git'
-          puts '*'*77 + ' ' + dir
+          puts '*'*11 + ' ' + Dir.getwd
           action.call
 
         else
